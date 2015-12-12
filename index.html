@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<script src="jquery-1.9.1.min.js"></script>
+	<title></title>
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="fancyInput.css">
+	<script src='fancyInput.js'></script>
+	<script src='poem.js'></script>
+</head>
+<body>
+	<div>
+		<div id='content' class="effect3">
+			<table id="poem" class="poem">
+				<tr>
+					<td class="verse_line">
+						<section class='line'>
+							<div>
+								<input type='text' line="1">
+							</div>
+						</section>
+					</td>
+					<td class='line_info'>
+						<section class='line_syllable_count'>
+							0
+						</section>
+					</td>
+				</tr>
+				<tr>
+					<td class="verse_line">
+						<section class='line'>
+							<div>
+								<input type='text' line="2">
+							</div>
+						</section>
+					</td>
+					<td class='line_info'>
+						<section class='line_syllable_count'>
+							0
+						</section>
+					</td>
+				</tr>
+				<tr>
+					<td class="verse_line">
+						<section class='line'>
+							<div>
+								<input type='text' line="3">
+							</div>
+						</section>
+					</td>
+					<td class='line_info'>
+						<section class='line_syllable_count'>
+							0
+						</section>
+					</td>
+				</tr>
+				<tr>
+					<td class="verse_line">
+						<section class='line'>
+							<div>
+								<input type='text' line="4">
+							</div>
+						</section>
+					</td>
+					<td class='line_info'>
+						<section class='line_syllable_count'>
+							0
+						</section>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<script>
+	$('section :input').val('').fancyInput()[0].focus();
+	</script>
+
+	<script>
+		prepareUI();
+	</script>
+</body>
+</html>
